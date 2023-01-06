@@ -18,6 +18,10 @@ public class StudentGroup {
 
     }
 
+    public StudentGroup(int groupnum) {
+        this.groupnum = groupnum;
+    }
+
     public Teacher getTeacher() {
         return teacher;
     }

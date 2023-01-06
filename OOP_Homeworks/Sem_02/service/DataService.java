@@ -12,6 +12,6 @@ public interface DataService {
         return user;
     }
     default StudentGroup createGroup(StudentGroup groupnum) {
-        return new StudentGroup();
+        return new StudentGroup(groupnum.getGroupnum());
     }
 }
