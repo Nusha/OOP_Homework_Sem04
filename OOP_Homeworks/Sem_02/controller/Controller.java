@@ -17,5 +17,7 @@ public class Controller {
         return (Student) studentService.read(student);
     }
 
-
+    public StudentGroup createGroup(int groupnum) {
+    return (studentService.createGroup(groupnum));
+    }
 }

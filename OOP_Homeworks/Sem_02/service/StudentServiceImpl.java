@@ -19,7 +19,7 @@ public class StudentServiceImpl implements DataService {
     }
 
     @Override
-    public StudentGroup createGroup(StudentGroup groupnum) {
+    public StudentGroup createGroup(int groupnum) {
         return DataService.super.createGroup(groupnum);
     }
 }
