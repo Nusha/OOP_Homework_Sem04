@@ -20,6 +20,17 @@ public class StudentServiceImpl implements DataService {
 
     @Override
     public StudentGroup createGroup(int groupnum) {
-        return DataService.super.createGroup(groupnum);
+        return null;
     }
+
+    @Override
+    public StudentGroup getGroup() {
+        return null;
+    }
+
+    @Override
+    public StudentGroup getGroup(int number) {
+        return null;
+    }
+
 }

@@ -1,5 +1,6 @@
 package Sem_02.service;
 
+import Sem_02.data.Student;
 import Sem_02.data.StudentGroup;
 import Sem_02.data.User;
 
@@ -11,7 +12,12 @@ public interface DataService {
 
         return user;
     }
-    default StudentGroup createGroup(int groupnum) {
-        return new StudentGroup(groupnum);
-    }
+    StudentGroup createGroup(int groupNumber);
+
+    StudentGroup getGroup();
+
+    StudentGroup getGroup(int number);
+
+    void removeStudent (Student name);
+
 }
