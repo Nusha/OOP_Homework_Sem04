@@ -2,19 +2,19 @@ package Sem_02.data;
 
 public class Student extends User implements Comparable<Student> {
 
-    private int groupnum;
+    private int groupNumber;
 
-    public Student(String name, int birthyear, String passnumber, int groupnum) {
+    public Student(String name, int birthyear, String passnumber, int groupNumber) {
         super(name, birthyear, passnumber);
-        this.groupnum = groupnum;
+        this.groupNumber = groupNumber;
     }
 
-    public int getGroupnum() {
-        return groupnum;
+    public int getGroupNumber() {
+        return groupNumber;
     }
 
-    public void setGroupnum(int groupnum) {
-        this.groupnum = groupnum;
+    public void setGroupNumber(int groupNumber) {
+        this.groupNumber = groupNumber;
     }
 
     @Override
