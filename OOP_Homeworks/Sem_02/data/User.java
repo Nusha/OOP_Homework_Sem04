@@ -3,7 +3,7 @@ package Sem_02.data;
 public abstract class User {
 
     private String name;
-    private int birthyear;
+    protected int birthyear;
     private String passnumber;
 
     public User(String name, int birthyear, String passnumber) {
