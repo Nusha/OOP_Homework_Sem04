@@ -1,5 +1,6 @@
 package Sem_02.service;
 
+import Sem_02.data.Student;
 import Sem_02.data.StudentGroup;
 import Sem_02.data.User;
 import Sem_02.util.ReaderFromTxt;
@@ -31,6 +32,11 @@ public class StudentServiceImpl implements DataService {
     @Override
     public StudentGroup getGroup(int number) {
         return null;
+    }
+
+    @Override
+    public void removeStudent(Student name) {
+
     }
 
 }
