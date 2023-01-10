@@ -7,20 +7,24 @@ public class StudentGroup implements Iterable<Student> {
     private Teacher teacher;
     private List<Student> studentlist;
 
-    private int groupnum;
+    private int groupNumber;
 
-    public StudentGroup(Teacher teacher, List<Student> studentlist, int groupnum) {
+    /* Так как переменные мы пишем в кэмелКейс, то правильно будет groupNum, а еще лучше groupNumber.
+    Исправил.
+     */
+
+    public StudentGroup(Teacher teacher, List<Student> studentlist, int groupNumber) {
         this.teacher = teacher;
         this.studentlist = studentlist;
-        this.groupnum = groupnum;
+        this.groupNumber = groupNumber;
     }
 
     public StudentGroup() {
 
     }
 
-    public StudentGroup(int groupnum) {
-        this.groupnum = groupnum;
+    public StudentGroup(int groupNumber) {
+        this.groupNumber = groupNumber;
     }
 
     public Teacher getTeacher() {
@@ -39,12 +43,12 @@ public class StudentGroup implements Iterable<Student> {
         this.studentlist = studentlist;
     }
 
-    public int getGroupnum() {
-        return groupnum;
+    public int getGroupNumber() {
+        return groupNumber;
     }
 
-    public void setGroupnum(int groupnum) {
-        this.groupnum = groupnum;
+    public void setGroupNumber(int groupNumber) {
+        this.groupNumber = groupNumber;
     }
 
     @Override
