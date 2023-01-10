@@ -1,8 +1,9 @@
 package Sem_02.data;
 
+import java.util.Iterator;
 import java.util.List;
 
-public class StudentGroup {
+public class StudentGroup implements Iterable<Student> {
     private Teacher teacher;
     private List<Student> studentlist;
 
@@ -44,5 +45,10 @@ public class StudentGroup {
 
     public void setGroupnum(int groupnum) {
         this.groupnum = groupnum;
+    }
+
+    @Override
+    public Iterator<Student> iterator() {
+        return new StudentGroupIterator(this);
     }
 }
