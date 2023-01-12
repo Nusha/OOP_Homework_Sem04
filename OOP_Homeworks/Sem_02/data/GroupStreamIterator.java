@@ -1,20 +1,30 @@
 package Sem_02.data;
 
 import java.util.Iterator;
+import java.util.List;
 
-public class GroupStreamIterator implements Iterator<GroupStream> {
+public class GroupStreamIterator implements Iterator<StudentGroup> {
+
+private GroupStream groupStream;
+private List<StudentGroup> groups;
+
+private int cursor;
+
+    public GroupStreamIterator(GroupStream groupStream) {
+        this.groupStream = groupStream;
+        this.groups = groupStream.getStudentGroups();
+    }
+
     @Override
     public boolean hasNext() {
-        return false;
+        return cursor < groups.size();
     }
 
     @Override
-    public GroupStream next() {
-        return null;
+    public StudentGroup next() {
+        return groups.get(cursor++);
     }
 
     @Override
-    public void remove() {
-        Iterator.super.remove();
-    }
+    public void remove() { groups.remove(cursor); }
 }
