@@ -1,11 +1,9 @@
 package Sem_02.controller;
-
-import Sem_02.data.GroupStream;
 import Sem_02.data.Student;
 import Sem_02.data.StudentGroup;
 import Sem_02.service.*;
 import java.util.List;
-import java.awt.*;
+
 
 
 public class Controller<G, I extends Number> {
@@ -46,17 +44,4 @@ public class Controller<G, I extends Number> {
     public void sortStream(List groupStream) {groupStreamService.sortStream(groupStream);}
 
 
-//    public Controller(GroupStreamServiceImpl streamService) {
-//        this.groupStreamService = streamService;
-//    }
-//
-//    public void streamListSort(List<GroupStream> groupStream)
-//    {
-//        groupStreamService.sortStream( groupStream);
-//    }
-
-
-//    public StudentGroup createGroup(int groupnum) {
-//    return (studentService.createGroup(groupnum));
-//    }
 }
