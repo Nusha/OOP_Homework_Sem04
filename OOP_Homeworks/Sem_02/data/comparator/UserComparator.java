@@ -1,7 +1,6 @@
 package Sem_02.data.comparator;
-
 import Sem_02.data.Student;
-import Sem_02.service.DataService;
+
 
 import java.util.Comparator;
 
