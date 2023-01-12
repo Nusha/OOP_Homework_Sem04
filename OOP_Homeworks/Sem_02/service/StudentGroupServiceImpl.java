@@ -2,36 +2,43 @@ package Sem_02.service;
 
 import Sem_02.data.Student;
 import Sem_02.data.StudentGroup;
-import Sem_02.data.User;
+import Sem_02.data.Teacher;
+import Sem_02.util.ReaderFromTxt;
 
 import java.util.Iterator;
+import java.util.List;
 
-public class StudentGroupServiceImpl implements DataService{
+public class StudentGroupServiceImpl implements StudentGroupService{
+//
+//    @Override
+//    public void create(User user) {
+//        DataService.super.create(user);
+//    }
+//
+//    @Override
+//    public User read(User user) {
+//        return DataService.super.read(user);
+//    }
 
-    @Override
-    public void create(User user) {
-        DataService.super.create(user);
-    }
-
-    @Override
-    public User read(User user) {
-        return DataService.super.read(user);
-    }
-
+    /** Работа над ошбками 2 урок.
+     * StudentServiceImpl имплементировать от него и реализовать метод createGroup.
+     * Чтобы реализовать этот метод возпользуетесь статическими методами из пекеджа utils для получения учителя и учеников
+     * Обратился к пэкэджу util, к статическим методам чтения учителя и листа учеников.
+     */
     @Override
     public StudentGroup createGroup(int groupNumber) {
-        return null;
+        Teacher teacher = ReaderFromTxt.readTeacherFromTxt();
+        List<Student> studentList= ReaderFromTxt.readStudentsFromTxt();
+        return new StudentGroup(teacher,studentList, groupNumber);
     }
 
     @Override
     public StudentGroup getGroup() {
-        return null;
+        StudentGroup group = new StudentGroup();
+        group = new StudentGroup(group.getTeacher(),group.getStudentlist());
+        return group;
     }
 
-    @Override
-    public StudentGroup getGroup(int number) {
-        return null;
-    }
 
     @Override
     public void removeStudent(Student name) {
