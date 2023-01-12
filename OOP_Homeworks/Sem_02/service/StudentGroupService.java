@@ -1,5 +1,6 @@
 package Sem_02.service;
 
+import Sem_02.data.Student;
 import Sem_02.data.StudentGroup;
 
 public interface StudentGroupService {
@@ -11,6 +12,8 @@ public interface StudentGroupService {
 
     StudentGroup getGroup();
 
-    StudentGroup getGroup(int number);
+    void removeStudent(Student name);
+
+//    StudentGroup getGroup(int number);
 
 }
