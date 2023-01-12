@@ -7,9 +7,6 @@ public interface DataService {
     void create(User user);
     User read(User user); // Удалил дефолтные методы. Добавил абстрактные.
 
-   
-
-
-    void removeStudent (Student name);
-
+    public int compare(Student student1, Student student2);
+    public int compareName(Student student1, Student student2);
 }
