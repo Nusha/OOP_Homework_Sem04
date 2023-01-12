@@ -6,7 +6,7 @@ import java.util.List;
 
 
 
-public class Controller<G, I extends Number> {
+public class Controller {
     private DataService studentService;
     private StudentGroupService studentGroupService;
     private GroupStreamService  groupStreamService;
