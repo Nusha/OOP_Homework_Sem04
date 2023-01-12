@@ -25,16 +25,5 @@ public class StudentServiceImpl extends UserComparator implements DataService {
          UserComparator comparator = new UserComparator();
          return comparator.compare(student1,student2);
     }
-    //    @Override
-//    public StudentGroup getGroup() {
-//        return null;
-//    }
-//
-//    @Override
-//    public StudentGroup getGroup(int number) {
-//        return null;
-//    }
-//
-
 
 }
