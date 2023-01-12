@@ -1,24 +1,13 @@
 package Sem_02.service;
-
 import Sem_02.data.Student;
 import Sem_02.data.StudentGroup;
 import Sem_02.data.Teacher;
 import Sem_02.util.ReaderFromTxt;
-
 import java.util.Iterator;
 import java.util.List;
 
 public class StudentGroupServiceImpl implements StudentGroupService{
-//
-//    @Override
-//    public void create(User user) {
-//        DataService.super.create(user);
-//    }
-//
-//    @Override
-//    public User read(User user) {
-//        return DataService.super.read(user);
-//    }
+
 
     /** Работа над ошбками 2 урок.
      * StudentServiceImpl имплементировать от него и реализовать метод createGroup.
