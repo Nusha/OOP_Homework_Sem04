@@ -5,7 +5,7 @@ import Sem_02.data.User;
 
 public interface DataService {
     void create(User user);
-    User read(User user); // Удалил дефолтные методы.
+    User read(User user); // Удалил дефолтные методы. Добавил абстрактные.
 
    
 
