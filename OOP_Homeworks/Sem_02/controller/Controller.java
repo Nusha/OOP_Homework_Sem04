@@ -30,6 +30,13 @@ public class Controller<G, I extends Number> {
         return (Student) studentService.read(student);
     }
 
+    public int compareStudent(Student student1, Student student2) {
+    return studentService.compare(student1,student2);
+    }
+    public int compareStudentName(Student student1, Student student2) {
+        return studentService.compareName(student1,student2);
+    }
+
     public StudentGroup createGroup(int groupNumber) {
         return studentGroupService.createGroup(groupNumber);
     }
