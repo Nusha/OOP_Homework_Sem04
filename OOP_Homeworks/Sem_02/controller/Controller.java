@@ -34,6 +34,8 @@ public class Controller<G, I extends Number> {
         return studentGroupService.createGroup(groupNumber);
     }
 
+    public void removeStudent(Student name) { studentGroupService.removeStudent(name); };
+
     public void sortStream(List groupStream) {groupStreamService.sortStream(groupStream);}
 
 
