@@ -2,12 +2,13 @@ package Sem_02.service;
 
 import Sem_02.data.Student;
 import Sem_02.data.User;
+import Sem_02.data.comparator.UserComparator;
 import Sem_02.util.ReaderFromTxt;
 import Sem_02.util.WriterToTxt;
 
 
 
-public class StudentServiceImpl implements DataService {
+public class StudentServiceImpl extends UserComparator implements DataService {
 
     @Override
     public void create(User user) {
@@ -19,8 +20,12 @@ public class StudentServiceImpl implements DataService {
          return ReaderFromTxt.readFromTxt(user);
 
     }
-
-//    @Override
+    @Override
+    public int compare(Student student1, Student student2) {
+         UserComparator comparator = new UserComparator();
+         return comparator.compare(student1,student2);
+    }
+    //    @Override
 //    public StudentGroup getGroup() {
 //        return null;
 //    }
@@ -30,9 +35,6 @@ public class StudentServiceImpl implements DataService {
 //        return null;
 //    }
 //
-    @Override
-    public void removeStudent(Student name) {
 
-    }
 
 }
