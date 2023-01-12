@@ -25,8 +25,8 @@ public class StudentGroup implements Iterable<Student> {
     }
 
     public StudentGroup() {
-        this.teacher = teacher;
-        this.studentlist = studentlist;
+//        this.teacher = teacher;
+//        this.studentlist = studentlist;
         this.groupNumber = groupNumber;
 
     }
