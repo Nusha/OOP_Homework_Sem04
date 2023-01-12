@@ -14,6 +14,6 @@ public interface StudentGroupService {
 
     void removeStudent(Student name);
 
-//    StudentGroup getGroup(int number);
+
 
 }
