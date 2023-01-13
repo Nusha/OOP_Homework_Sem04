@@ -5,10 +5,10 @@ import java.util.List;
 
 public class GroupStreamIterator implements Iterator<StudentGroup> {
 
-private GroupStream groupStream;
-private List<StudentGroup> groups;
+    private final GroupStream groupStream;
+    private final List<StudentGroup> groups;
 
-private int cursor;
+    private int cursor;
 
     public GroupStreamIterator(GroupStream groupStream) {
         this.groupStream = groupStream;
@@ -26,5 +26,7 @@ private int cursor;
     }
 
     @Override
-    public void remove() { groups.remove(cursor); }
+    public void remove() {
+        groups.remove(cursor);
+    }
 }

@@ -2,7 +2,8 @@ package Sem_02.data;
 
 import java.util.Iterator;
 import java.util.List;
-public class GroupStream implements Iterable<StudentGroup>{
+
+public class GroupStream implements Iterable<StudentGroup> {
 
     private List<StudentGroup> studentGroups;
 
@@ -20,6 +21,8 @@ public class GroupStream implements Iterable<StudentGroup>{
 
 
     @Override
-    public Iterator<StudentGroup> iterator() {return new GroupStreamIterator(this); }
+    public Iterator<StudentGroup> iterator() {
+        return new GroupStreamIterator(this);
+    }
 
 }
